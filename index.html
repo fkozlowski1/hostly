@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostly - Twój Szybki Hosting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="#start" class="logo"><img src="logo.png" alt="logo"></a></h1>
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <input type="checkbox" id="menu-toggle" />
+    <nav>
+      <a href="#start">Strona Główna</a>
+      <a href="#cennik">Cennik</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="start" class="baner">
+      <h1>Najszybszy hosting dla Twojej strony</h1>
+      <p>Bezpieczne serwery z pełnym wsparciem</p>
+    </section>
+
+    <section id="cennik" class="oferty">
+      <h2>Nasze oferty</h2>
+      <div class="kontener-kart">
+        <div class="karta">
+          <h3>Start</h3>
+          <div class="cena">50 zł / 30 dni</div>
+          <ul>
+            <li>Idealny dla wizytówki</li>
+            <li>20 GB Miejsca</li>
+            <li>1 Domena</li>
+            <li>Kopia zapasowa co 30 dni</li>
+            <li>Certyfikat SSL</li>
+            <li>5 Kont E-mail</li>
+            <li>2 bazy danych MySQL</li>
+            <li>Wsparcie do 24h</li>
+          </ul>
+          <a href="#" class="przycisk">Dodaj do koszyka</a>
+        </div>
+
+        <div class="karta">
+          <h3>Standard</h3>
+          <div class="cena">120 zł / 30 dni</div>
+          <ul>
+            <li>Idealny dla strony firmowej</li>
+            <li>100 GB Miejsca</li>
+            <li>10 Domen</li>
+            <li>Kopia zapasowa co 14 dni</li>
+            <li>Certyfikat SSL</li>
+            <li>15 Kont E-mail</li>
+            <li>10 baz danych MySQL</li>
+            <li>Wsparcie do 12h</li>
+          </ul>
+          <a href="#" class="przycisk">Dodaj do koszyka</a>
+        </div>
+
+        <div class="karta">
+          <h3>Premium</h3>
+          <div class="cena">340 zł / 30 dni</div>
+          <ul>
+            <li>Idealny dla sklepu internetowego</li>
+            <li>200 GB Miejsca</li>
+            <li>Bez limitu domen</li>
+            <li>Kopia zapasowa co 7 dni</li>
+            <li>Certyfikat SSL</li>
+            <li>Konta bez limitu</li>
+            <li>Bazy bez limitu</li>
+            <li>Wsparcie 24 / 7</li>
+          </ul>
+          <a href="#" class="przycisk">Dodaj do koszyka</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="opinie" class="opinie">
+      <h2>Opinie naszych klientów</h2>
+      <div class="kontener-opinii">
+        <div class="recenzja">
+          <p class="tekst-opinii">"Najlepszy hosting, na jakim stawiałem stronę. Zero problemów, a wsparcie techniczne odpowiada w kilka minut."</p>
+          <span class="autor">- Jan Kowalski, Webdeveloper</span>
+        </div>
+        <div class="recenzja">
+          <p class="tekst-opinii">"Przeniosłam tutaj swój sklep internetowy. Strona działa błyskawicznie, a klienci chwalą szybkie ładowanie."</p>
+          <span class="autor">- Anna Nowak, E-commerce</span>
+        </div>
+        <div class="recenzja">
+          <p class="tekst-opinii">"Prosty panel, świetne ceny i bezpłatny SSL w pakiecie. Dla mojej małej firmy to idealne rozwiązanie."</p>
+          <span class="autor">- Michał Wiśniewski, Fotograf</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="kontener">
+      <form action="#" method="post" class="formularz">
+        <h2>Skontaktuj się z nami</h2>
+        <div class="pola">
+          <input type="text" id="imie" name="imie" placeholder="Imię" class="pole" required />
+          <input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" class="pole" required />
+        </div>
+        <div class="pola">
+          <input type="email" name="email" id="email" placeholder="E-mail" class="pole" required />
+          <input type="tel" name="telefon" id="telefon" placeholder="Numer telefonu" class="pole" required />
+        </div>
+        <label for="wiadomosc">Wiadomość</label>
+        <textarea id="wiadomosc" name="wiadomosc" class="pole" required></textarea>
+        <button type="submit" class="przycisk">Wyślij</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hostly. Wszelkie prawa zastrzeżone.</p>
+  </footer>
+</body>
+</html>

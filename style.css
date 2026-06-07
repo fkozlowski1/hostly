@@ -1,0 +1,358 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  background-color: #f1f3f5;
+}
+
+main {
+  flex: 1;
+}
+
+/* --- HEADER & NAV --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 100px;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo img {
+  width: 204px;
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- PRZYCISKI --- */
+.przycisk {
+  background-color: #3498db;
+  padding: 20px;
+  border-style: none;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.przycisk:hover {
+  background-color: #2980b9;
+  text-decoration: none;
+}
+
+/* --- BANER --- */
+.baner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  text-align: center;
+  background-image: url("https://www.sectorlink.com/img/blog/Server-racks-in-server-room-da.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.baner h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.baner p {
+  font-size: 20px;
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.9),
+    0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+/* --- CENNIK (KARTY) --- */
+.oferty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.oferty h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #000;
+}
+
+.kontener-kart {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.karta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #3498db;
+  transition: 0.3s;
+}
+
+.karta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cena {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  color: #3498db;
+}
+
+.karta ul {
+  list-style-type: "✓";
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.karta ul li {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+/* --- OPINIE --- */
+.opinie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #e9ecef;
+}
+
+.opinie h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+}
+
+.kontener-opinii {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.recenzja {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tekst-opinii {
+  font-style: italic;
+  color: #5a6268;
+  margin-bottom: 15px;
+}
+
+.autor {
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+
+/* --- KONTAKT / FORMULARZ --- */
+.kontener {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.formularz {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #3498db;
+}
+
+.pole {
+  border-radius: 10px;
+  border: 1px #000 solid;
+  padding: 10px;
+  width: 100%;
+}
+
+.pola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+label[for="wiadomosc"] {
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 150px;
+  resize: none;
+}
+
+/* --- FOOTER --- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+}
+
+/* --- RESPONSATYWNOŚĆ I HAMBURGER --- */
+.hamburger,
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 110;
+    padding-right: 10px;
+  }
+
+  .hamburger > span {
+    background-color: #fff;
+    width: 25px;
+    height: 3px;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    position: fixed;
+    top: 100px;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c3e50;
+    padding: 40px;
+    transition: left 0.3s ease-in-out;
+    z-index: 105;
+  }
+
+  header nav a {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .przycisk {
+    width: 80%;
+    text-align: center;
+  }
+
+  #menu-toggle:checked ~ nav {
+    left: 0;
+  }
+
+  .recenzja {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Zapobiega wylewaniu się pól w formularzu kontaktowym na telefonach */
+  .pola {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
