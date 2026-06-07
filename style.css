@@ -298,7 +298,7 @@ footer {
   header nav {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 25px;
     position: fixed;
@@ -307,9 +307,10 @@ footer {
     width: 100vw;
     height: calc(100vh - 100px);
     background-color: #1a252f;
-    padding: 40px;
+    padding: 20px 40px;
     transition: left 0.3s ease-in-out;
     z-index: 105;
+    overflow-y: auto;
   }
 
   header nav a {
