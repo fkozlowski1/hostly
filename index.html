@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <h1><a href="#start" class="logo"><img src="logo.png" alt="logo"></a></h1>
+    <h1><a href="index.html"><img src="logo.png" alt="logo" class="logo"></a></h1>
     <label for="menu-toggle" class="hamburger">
       <span></span>
       <span></span>
@@ -16,15 +16,16 @@
     </label>
     <input type="checkbox" id="menu-toggle" />
     <nav>
-      <a href="#start">Strona Główna</a>
-      <a href="#cennik">Cennik</a>
-      <a href="#opinie">Opinie</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="#start" onclick="document.getElementById('menu-toggle').checked = false">Start</a>
+      <a href="#cennik" onclick="document.getElementById('menu-toggle').checked = false">Cennik</a>
+      <a href="#" onclick="document.getElementById('menu-toggle').checked = false">Koszyk</a>
+      <a href="#opinie" onclick="document.getElementById('menu-toggle').checked = false">Opinie</a>
+      <a href="#kontakt" onclick="document.getElementById('menu-toggle').checked = false">Kontakt</a>
     </nav>
   </header>
 
   <main>
-    <section id="start" class="baner">
+    <section id="start" class="hero">
       <h1>Najszybszy hosting dla Twojej strony</h1>
       <p>Bezpieczne serwery z pełnym wsparciem</p>
     </section>
@@ -121,5 +122,6 @@
   <footer>
     <p>&copy; 2026 Hostly. Wszelkie prawa zastrzeżone.</p>
   </footer>
+
 </body>
 </html>
