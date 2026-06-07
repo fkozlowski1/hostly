@@ -305,7 +305,7 @@ footer {
     top: 100px;
     left: -100vw;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 100px);
     background-color: #1a252f;
     padding: 40px;
     transition: left 0.3s ease-in-out;
