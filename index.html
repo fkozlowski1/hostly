@@ -1,127 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hostly - Twój Szybki Hosting</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1><a href="index.html"><img src="logo.png" alt="logo" class="logo"></a></h1>
-    <label for="menu-toggle" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <input type="checkbox" id="menu-toggle" />
-    <nav>
-      <a href="#start" onclick="document.getElementById('menu-toggle').checked = false">Start</a>
-      <a href="#cennik" onclick="document.getElementById('menu-toggle').checked = false">Cennik</a>
-      <a href="#" onclick="document.getElementById('menu-toggle').checked = false">Koszyk</a>
-      <a href="#opinie" onclick="document.getElementById('menu-toggle').checked = false">Opinie</a>
-      <a href="#kontakt" onclick="document.getElementById('menu-toggle').checked = false">Kontakt</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hostly - Twój Szybki Hosting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-  <main>
-    <section id="start" class="hero">
-      <h1>Najszybszy hosting dla Twojej strony</h1>
-      <p>Bezpieczne serwery z pełnym wsparciem</p>
-    </section>
+    <header>
 
-    <section id="cennik" class="oferty">
-      <h2>Nasze oferty</h2>
-      <div class="kontener-kart">
-        <div class="karta">
-          <h3>Start</h3>
-          <div class="cena">50 zł / 30 dni</div>
-          <ul>
-            <li>Idealny dla wizytówki</li>
-            <li>20 GB Miejsca</li>
-            <li>1 Domena</li>
-            <li>Kopia zapasowa co 30 dni</li>
-            <li>Certyfikat SSL</li>
-            <li>5 Kont E-mail</li>
-            <li>2 bazy danych MySQL</li>
-            <li>Wsparcie do 24h</li>
-          </ul>
-          <a href="#" class="przycisk">Dodaj do koszyka</a>
+      <h1>
+        <a href="index.html"><img src="logo.png" alt="logo" class="logo" /></a>
+      </h1>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#start">Start</a></li>
+          <li><a href="#oferty">Oferty</a></li>
+          <li><a href="#zamowienie">Zamówienie</a></li>
+          <li><a href="#opinie">Opinie</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+
+      <section id="start" class="hero">
+        <h1>
+          <span class="nazwa-firmy">Hostly</span>
+          <span class="slogan">Twój szybki hosting</span>
+        </h1>
+      </section>
+
+      <section id="oferty" class="oferty">
+
+        <h2>Nasze oferty</h2>
+
+        <div class="kontener-kart">
+
+          <div class="karta">
+            <h3>Start</h3>
+            <div class="cena">20 zł / miesiąc</div>
+            <ul>
+              <li>Rabat <strong>-50%</strong> w pierwszym roku</li>
+              <li><strong>10 GB</strong> pojemności</li>
+              <li>Darmowa domena <strong>.pl</strong> na rok</li>
+              <li><strong>1</strong> konto e-mail we własnej domenie</li>
+              <li>Darmowy certyfikat SSL</li>
+              <li>Idealny na blog lub portfolio</li>
+            </ul>
+            <a href="#zamowienie" class="przycisk" onclick="wybierzPakiet('start')">Wybierz pakiet</a>
+          </div>
+
+          <div class="karta">
+            <h3>Standard</h3>
+            <div class="cena">50 zł / miesiąc</div>
+            <ul>
+              <li>Rabat <strong>-50%</strong> w pierwszym roku</li>
+              <li><strong>40 GB</strong> pojemności</li>
+              <li>Darmowa domena <strong>.pl lub .com</strong> na rok</li>
+              <li><strong>15</strong> kont e-mail we własnej domenie</li>
+              <li>Darmowy certyfikat SSL i kopie zapasowe</li>
+              <li>Dla małych firm i sklepów internetowych</li>
+            </ul>
+            <a href="#zamowienie" class="przycisk" onclick="wybierzPakiet('standard')">Wybierz pakiet</a>
+          </div>
+
+          <div class="karta">
+            <h3>Premium</h3>
+            <div class="cena">120 zł / miesiąc</div>
+            <ul>
+              <li>Rabat <strong>-50%</strong> w pierwszym roku</li>
+              <li><strong>150 GB</strong> pojemności</li>
+              <li>Darmowa domena <strong>.pl lub .com</strong> na 2 lata</li>
+              <li><strong>Nielimitowane</strong> konta e-mail we własnej domenie</li>
+              <li>Zaawansowane narzędzia SEO i analityka</li>
+              <li>Darmowy certyfikat SSL i kopie zapasowe</li>
+              <li>Wsparcie techniczne 24/7</li>
+              <li>Dla dużych projektów i e-commerce</li>
+            </ul>
+            <a href="#zamowienie" class="przycisk" onclick="wybierzPakiet('premium')">Wybierz pakiet</a>
+          </div>
+
         </div>
 
-        <div class="karta">
-          <h3>Standard</h3>
-          <div class="cena">120 zł / 30 dni</div>
-          <ul>
-            <li>Idealny dla strony firmowej</li>
-            <li>100 GB Miejsca</li>
-            <li>10 Domen</li>
-            <li>Kopia zapasowa co 14 dni</li>
-            <li>Certyfikat SSL</li>
-            <li>15 Kont E-mail</li>
-            <li>10 baz danych MySQL</li>
-            <li>Wsparcie do 12h</li>
-          </ul>
-          <a href="#" class="przycisk">Dodaj do koszyka</a>
+      </section>
+
+      <section id="opinie" class="opinie">
+
+        <h2>Co mówią nasi klienci</h2>
+
+        <div class="kontener-opinii">
+          <div class="recenzja">
+            <p class="tekst-opinii">"Strona działa niesamowicie szybko. Przeniosłem tutaj swój sklep i widzę ogromną różnicę w ładowaniu."</p>
+            <span class="autor">Jan Kowalski</span>
+          </div>
+
+          <div class="recenzja">
+            <p class="tekst-opinii">"Wsparcie techniczne pomogło mi w środku nocy z konfiguracją domeny. Gorąco polecam Hostly!"</p>
+            <span class="autor">Anna Nowak</span>
+          </div>
+
+          <div class="recenzja">
+            <p class="tekst-opinii">"Prosty panel, świetne ceny i bezpłatny SSL w pakiecie. Dla mojej małej firmy to idealne rozwiązanie."</p>
+            <span class="autor">Michał Bartoszewicz</span>
         </div>
 
-        <div class="karta">
-          <h3>Premium</h3>
-          <div class="cena">340 zł / 30 dni</div>
-          <ul>
-            <li>Idealny dla sklepu internetowego</li>
-            <li>200 GB Miejsca</li>
-            <li>Bez limitu domen</li>
-            <li>Kopia zapasowa co 7 dni</li>
-            <li>Certyfikat SSL</li>
-            <li>Konta bez limitu</li>
-            <li>Bazy bez limitu</li>
-            <li>Wsparcie 24 / 7</li>
-          </ul>
-          <a href="#" class="przycisk">Dodaj do koszyka</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="opinie" class="opinie">
-      <h2>Opinie naszych klientów</h2>
-      <div class="kontener-opinii">
-        <div class="recenzja">
-          <p class="tekst-opinii">"Najlepszy hosting, na jakim stawiałem stronę. Zero problemów, a wsparcie techniczne odpowiada w kilka minut."</p>
-          <span class="autor">- Jan Kowalski, Webdeveloper</span>
-        </div>
-        <div class="recenzja">
-          <p class="tekst-opinii">"Przeniosłam tutaj swój sklep internetowy. Strona działa błyskawicznie, a klienci chwalą szybkie ładowanie."</p>
-          <span class="autor">- Anna Nowak, E-commerce</span>
-        </div>
-        <div class="recenzja">
-          <p class="tekst-opinii">"Prosty panel, świetne ceny i bezpłatny SSL w pakiecie. Dla mojej małej firmy to idealne rozwiązanie."</p>
-          <span class="autor">- Michał Wiśniewski, Fotograf</span>
-        </div>
-      </div>
-    </section>
+      <section id="zamowienie" class="kontener-zamowienia">
+        
+        <form action="#" method="post" class="formularz">
 
-    <section id="kontakt" class="kontener">
-      <form action="#" method="post" class="formularz">
-        <h2>Skontaktuj się z nami</h2>
-        <div class="pola">
-          <input type="text" id="imie" name="imie" placeholder="Imię" class="pole" required />
-          <input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" class="pole" required />
-        </div>
-        <div class="pola">
-          <input type="email" name="email" id="email" placeholder="E-mail" class="pole" required />
-          <input type="tel" name="telefon" id="telefon" placeholder="Numer telefonu" class="pole" required />
-        </div>
-        <label for="wiadomosc">Wiadomość</label>
-        <textarea id="wiadomosc" name="wiadomosc" class="pole" required></textarea>
-        <button type="submit" class="przycisk">Wyślij</button>
-      </form>
-    </section>
-  </main>
+          <h2>Złóż zamówienie</h2>
 
-  <footer>
-    <p>&copy; 2026 Hostly. Wszelkie prawa zastrzeżone.</p>
-  </footer>
+          <div class="grupa-pola">
+            <label for="pakiet">Wybrany pakiet hostingowy</label>
+            <select id="pakiet" name="pakiet" class="pole" required>
+              <option value="" disabled selected>Wybierz pakiet</option>
+              <option value="start">Start - 20 zł / miesiąc</option>
+              <option value="standard">Standard - 50 zł / miesiąc</option>
+              <option value="premium">Premium - 120 zł / miesiąc</option>
+            </select>
+          </div>
 
-</body>
+          <div class="pola">
+            <input type="text" id="imie" name="imie" placeholder="Imię" class="pole" required />
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" class="pole" required />
+          </div>
+
+          <div class="pola">
+            <input type="email" name="email" id="email" placeholder="E-mail" class="pole" required />
+            <input type="tel" name="telefon" id="telefon" placeholder="Numer telefonu" class="pole" required />
+          </div>
+
+          <div class="metody-platnosci">
+
+            <span class="etykieta-sekcji">Metoda płatności</span>
+
+            <div class="opcje-platnosci">
+
+              <label class="kafelek-radio">
+                <input type="radio" name="platnosc" value="blik" checked required />
+                <span>BLIK</span>
+              </label>
+
+              <label class="kafelek-radio">
+                <input type="radio" name="platnosc" value="przelew" required />
+                <span>Przelew</span>
+              </label>
+
+              <label class="kafelek-radio">
+                <input type="radio" name="platnosc" value="karta" required />
+                <span>Karta płatnicza</span>
+              </label>
+
+            </div>
+
+          </div>
+
+          <div class="pola-regulamin">
+            <input type="checkbox" name="regulamin" id="regulamin" required />
+            <label for="regulamin">Akceptuję <a href="regulamin.html">regulamin serwisu</a></label>
+          </div>
+
+          <button type="submit" class="przycisk">Zamawiam i płacę</button>
+
+        </form>
+
+      </section>
+
+      <section id="kontakt" class="sekcja-kontakt">
+
+        <div class="kontener-kontakt">
+          
+          <h2>Masz pytania przed zakupem?</h2>
+          <p>Sprawdź nasze <a href="faq.html">FAQ </a>lub napisz do nas.</p>
+          
+          <form action="index.html" method="post" class="formularz-kontakt">
+
+            <input type="email" name="kontakt-email" placeholder="Twój adres E-mail" class="pole" required />
+            <input type="text" name="kontakt-temat" placeholder="Temat" class="pole" required />
+            <textarea name="kontakt-wiadomosc" placeholder="W czym możemy Ci pomóc?" class="pole" required></textarea>
+            <button type="submit" class="przycisk przycisk-kontakt">Wyślij zapytanie</button>
+            
+          </form>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      
+      <p>&copy; 2026 Hostly. Wszystkie prawa zastrzeżone. <a href="regulamin.html">Regulamin</a></p>
+
+    </footer>
+
+    <script>
+
+      function wybierzPakiet(pakiet) {
+        let wybranyPakiet = document.getElementById('pakiet');
+
+        if(wybranyPakiet) {
+          wybranyPakiet.value = pakiet;
+        }
+      }
+
+    </script>
+
+  </body>
 </html>
