@@ -180,7 +180,7 @@ header .menu ul li a:hover {
 
 .karta ul {
   list-style-type: "✓";
-  margin-bottom: 30px;
+  margin-bottom: auto;
   display: inline-block;
   text-align: left;
   width: 100%;
